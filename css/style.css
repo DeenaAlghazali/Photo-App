@@ -1,0 +1,381 @@
+* {
+    margin: 0;
+    padding: 0
+}
+body {
+    margin: 0;
+}
+a {
+    text-decoration: none;
+}
+/* first Page (header) section */
+.header {
+    text-align: center;
+    background-image: url("../images/header-bg.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    min-height: 100vh;
+    width: 100%;   
+}
+.nav-bar li {   
+    list-style: none;
+    display: inline-block;
+    text-align: center;    
+    margin: 20px;
+    margin-top: 45px;
+    padding: 18px;
+}
+.nav-bar li a {
+    color: white;
+    font-family: system-ui;
+    font-weight:bold ;
+}
+.nav-bar li :hover {
+    border-bottom:3px solid #16a085;
+}
+/* camera's icone  */
+.header a i {
+    font-size: 30px;
+}
+
+.header .content {
+    align-self: center;
+    text-transform: uppercase;
+    font-size: 30px;
+    margin-top: 240px;
+    color: white;
+    font-weight: bold;
+    font-family: system-ui;
+}
+
+
+.header .secondary-header {
+    color: rgb(255 255 255 / 50%);
+    margin: 15px;
+}
+.header .secondary-header p {
+    width: fit-content;
+    margin: auto;
+    position: relative;
+}
+.header .secondary-header p::before,
+.header .secondary-header p::after {
+    content: '';
+    position: absolute;
+    width: 150%;
+    height: 1px;
+    background-color: #fff;
+    top: 50%;
+    opacity: 50%;
+}
+.header .secondary-header p::before {
+    left: -157%;
+}
+.header .secondary-header p::after {
+    right: -157%;
+}
+.btn {
+    background-color: #16a085;
+    color: #fff;
+    padding: 15px 10px 15px 15px;
+    border: 0;
+    font-size: 15px;
+    margin-top: 20px;
+}
+.btn i {
+    font-size: 20px;
+    margin-left: 20px;
+}
+.social {
+    margin-top: 20px;
+}
+.social li {
+    list-style: none;
+    color: white;
+    display: inline-block;
+    margin: 7px;
+}
+.social li a i {
+    color: white;
+    font-size: 20px;
+}
+/*end of first Page (header) section */
+
+/* page 2  "Photo app" */
+/* Photo app section*/
+.photo-app-section {
+    padding-top: 60px;
+    background-image: url("../images/section2-bg.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.photo-app-section .container {
+    max-width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.photo-app-section .content,
+.photo-app-section .photo {
+    flex-basis: 1;
+    width: 50%;
+}
+
+.photo-app-section .photo div {
+    position: relative;
+    text-align: center;
+    width: fit-content;
+    margin: auto;
+}
+.photo-app-section .photo i {
+    position: absolute;
+    bottom: 142px;
+    left: 76px;
+    color: #fff;
+    font-size: 49px;
+    opacity: 50%;
+}
+.photo-app-section .content h1 {
+    color: #16a085;
+}
+.photo-app-section .content p {
+    font-size: 12px;
+    line-height: 3;
+    height: 170px;
+    overflow: hidden;
+    margin-bottom: 80px;
+    color: #000;
+}
+
+/* Photo app section*/
+/*end of page 2  "Photo app" */
+
+/* page 3  "Overview" */
+.photo-app2-section {
+    padding-top: 80px;
+}
+.photo-app2-section .container {
+    max-width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    height: 450px;
+    overflow: hidden;
+}
+.photo-app2-section .content,
+.photo-app2-section .photo {
+    /* flex-basis: 1; */
+    width: 50%;
+}
+.photo-app2-section .photo  {
+    text-align: center;
+}
+.photo-app2-section .content h1 {
+    color: #16a085;
+}
+.photo-app2-section .content p {
+    font-size: 12px;
+    line-height: 3;
+    height: 170px;
+    overflow: hidden;
+    margin-bottom: 40px;
+    color: #000;
+}
+/* end of page 3  "Overview" */ 
+
+/* page 4  "images section" */
+.images-section {
+    background-image: url("../images/section2-bg.png");
+    display: flex;
+}
+.images-section .part1{
+    width: 50%;
+    text-align: center;
+    padding-top: 140px;
+    padding-bottom: 160px;
+}
+.images-section .part1 i{
+    font-size: 50px;
+    color: #16a085;
+    /* margin-right: 40px; */
+}
+.images-section h2 {
+    color: #16a085;
+    margin-top: 20px;
+}
+.images-section p {
+    font-size: 11px;
+    height: 60px;
+    overflow: hidden;
+    color: rgb(0, 0, 0);
+    text-align: justify;
+    margin-left: 223px;
+    margin-right: 223px;
+}
+.images-section .part2{
+    width: 50%;
+    margin-top: 65px;
+    position: relative;
+}
+.images-section .slider {
+    display: flex;
+    width: 540px;
+    max-width: 540px;
+    overflow: hidden;
+}
+.images-section .part2 .container { 
+    position: relative;
+}
+.images-section .group .container .fa-comment-alt {
+    position: absolute;
+    font-size: 30px;
+    color: white;
+    left: 12px;
+    bottom: 22px;
+}
+.images-section .group .container .fa-heart {
+    position: absolute;
+    font-size: 30px;
+    color: white;
+    left: 60px;
+    bottom: 22px;
+}
+.images-section .part2 div img {
+    height: 170px;
+    width: 255px;
+    margin-bottom: 8px;
+    margin-right: 20px;
+}
+.move #move-right{
+    font-size: 40px;
+    color: #16a085;
+    position: absolute;
+    bottom: 0;
+    left: 200px;
+    margin-bottom: 10px;
+
+}
+.move #move-left{
+    font-size: 40px;
+    color: #16a085;
+    position: absolute;
+    bottom: 0;
+    left: 120px;
+    margin-bottom: 10px;
+}
+/*end of page 4  "images section" */
+
+/* page 5  "subscribe"  */
+.subscribe { 
+    padding-top: 200px;
+    padding-bottom: 259px;
+    background-image: url("../images/Subscribe\ pic.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    /* margin-bottom: 500px; */
+    background-attachment: fixed;
+}
+.subscribe .content {
+    height: 100px;
+    text-align: center;
+}
+.subscribe .content h3 {
+    color:#fff;
+    margin-bottom: 40px;
+    font-size: 20px;
+    letter-spacing: 3px;
+}
+input {
+    width: 350px;
+    height: 47px;
+    border-radius: 40px;
+    padding: 0 20px;
+    border: 0;
+    color: #000;
+    font-weight: bold;
+}
+input::placeholder {
+    color: #000;
+    font-weight: bold;
+}
+input:focus {
+    outline: 0
+}
+
+.form-control {
+    position: relative;
+    width: fit-content;
+    margin: auto;
+}
+.form-control i {
+    position: absolute;
+    right: 11px;
+    top: 10px;
+    color: #16a085;
+    font-size: 29px;
+}
+/*end of page 5  "subscribe"  */
+
+/* page 6  "Download"  */
+.Download {
+    background-image: url("../images/section2-bg.png");
+    padding: 40px;
+}
+.Download h1 {
+    margin-top: 20px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.Download .container{
+    max-width: 70%;
+    margin: auto;
+}
+.Download p {
+    font-size: 12px;
+    line-height: 3;
+    height: 150px;
+    overflow: hidden;
+    color: #000;
+    text-align: justify;
+}
+.apps {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    gap: 80px;
+}
+.apps div {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #16a085;
+    color: #fff;
+    text-align: center;
+}
+.apps div i {
+    font-size: 55px
+}
+.footer {
+    background-color: white;
+    display: flex;
+    padding-top:49px ;
+    padding-bottom: 39px;
+    justify-content: space-around;
+}
+.footer p,.footer div {
+    display: flex;
+    align-items: center;
+}
+.footer i {
+    font-size: 50px;
+    color: #16a085;
+    margin-right: 40px;
+}
+/* .display-none {
+    display: none;
+} */
+/*end of page 6  "Download"  */
+
